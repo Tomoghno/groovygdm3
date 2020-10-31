@@ -1,15 +1,15 @@
 
 # groovygdm3
 
-_**This script assumes that the Installation of Ubuntu 20.04 is a fresh install. If you tried to change the GDM background with someother scripts, you first need to reset those changes. Other scripts may have the option --reset.**_
+_**This script assumes that the Installation of Ubuntu 20.10 is a fresh install. If you tried to change the GDM background with someother scripts, you first need to reset those changes. Other scripts may have the option --reset.**_
 
 _**Recommended: Please have a look on the 'TrailRun' Branch for single line commands like below**_
 ````
-sudo ./focalgdm3 /absolute/path/to/Image
-sudo ./focalgdm3 \#aAbBcC
+sudo ./groovygdm3 /absolute/path/to/Image
+sudo ./groovygdm3 \#aAbBcC
 ````
 
-_**Change the login screen background for Ubuntu 20.04 only.**_
+_**Change the login screen background for Ubuntu 20.10 only.**_
 
 this script is to change the login screen background of Ubuntu 20.04 only.
 
@@ -20,11 +20,11 @@ you can download the `focalgdm3` file via command line
 Once you downloaded the script `focalgdm3`. cd to the downloaded script file.
 
 run the below command with root priviliges and follow the prompts.
-`./focalgdm3 --set`
+`./groovygdm3 --set`
 
 to reset everything that the script made
 run the below command with root priviliges
-`./focalgdm3 --reset`
+`./groovygdm3 --reset`
 
 ![setting of login screen background with Image](https://i.stack.imgur.com/OeuO5.gif)
 
