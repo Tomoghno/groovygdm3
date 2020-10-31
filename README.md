@@ -15,7 +15,7 @@ this script is to change the login screen background of Ubuntu 20.04 only.
 
 you can download the `groovygdm3` file via command line
 
-    wget -qO - https://github.com/PRATAP-KUMAR/focalgdm3/archive/master.tar.gz | tar zx --strip-components=1 focalgdm3-master/focalgdm3
+    git clone https://github.com/Tomoghno/groovygdm3
 
 Once you downloaded the script `focalgdm3`. cd to the downloaded script file.
 
@@ -25,8 +25,6 @@ run the below command with root priviliges and follow the prompts.
 to reset everything that the script made
 run the below command with root priviliges
 `./groovygdm3 --reset`
-
-![setting of login screen background with Image](https://i.stack.imgur.com/OeuO5.gif)
 
 ![result of Image](https://i.stack.imgur.com/ssYjj.png)
 
