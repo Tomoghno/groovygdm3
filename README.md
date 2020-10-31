@@ -5,7 +5,7 @@ _**This script assumes that the Installation of Ubuntu 20.10 is a fresh install.
 
 _**Change the login screen background for Ubuntu 20.10 only.**_
 
-this script is to change the login screen background of Ubuntu 20.04 only.
+this script is to change the login screen background of Ubuntu 20.10 only.
 
 you can download the `groovygdm3` file via command line
 
