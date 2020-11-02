@@ -9,7 +9,7 @@ else
 echo "
 ----------------------------------------
 Sorry, Script is only for Ubuntu 20.10
-Exiting...
+Quitting...
 ----------------------------------------"
 exit 1
 fi
@@ -20,7 +20,7 @@ then
 echo "
 -----------------------------------------------------------------------------------------------------
 Sorry, the package 'libglib2.0-dev' is not installed. Install the package and then run this Script.
-For now, Exiting...
+For now, Quitting...
 -----------------------------------------------------------------------------------------------------"
 exit 1
 fi
@@ -48,7 +48,7 @@ read answer
 
 if [ "$answer" == "n" ] || [ "$answer" == "N" ]
 then
-echo "Exiting..."
+echo "Quittinging..."
 exit 1
 fi
 
@@ -63,7 +63,7 @@ read a
 if [ -z $a ]
 then
 echo "Option is not selected.
-Exiting..."
+Quitting..."
 exit 1
 fi
 
@@ -94,7 +94,7 @@ fi
 if [ -z $b ] && [ -z $c ]
 then
 echo "Input is not Provided.
-Exiting..."
+Quitting..."
 exit 1
 fi
 
@@ -183,16 +183,16 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     <file>icons/scalable/actions/pointer-double-click-symbolic.svg</file>
     <file>icons/scalable/actions/eye-open-negative-filled-symbolic.svg</file>
   </gresource>
-</gresources>' > $dest/focalgdm3.gresource.xml
+</gresources>' > $dest/groovygdm3.gresource.xml
 
 cd $dest
-glib-compile-resources focalgdm3.gresource.xml
-mv focalgdm3.gresource ..
+glib-compile-resources groovygdm3.gresource.xml
+mv groovygdm3.gresource ..
 rm -r $dest
-update-alternatives --quiet --install /usr/share/gnome-shell/gdm3-theme.gresource gdm3-theme.gresource /usr/local/share/gnome-shell/theme/focalgdm3.gresource 0
-update-alternatives --quiet --set gdm3-theme.gresource /usr/local/share/gnome-shell/theme/focalgdm3.gresource
+update-alternatives --quiet --install /usr/share/gnome-shell/gdm3-theme.gresource gdm3-theme.gresource /usr/local/share/gnome-shell/theme/groovygdm3.gresource 0
+update-alternatives --quiet --set gdm3-theme.gresource /usr/local/share/gnome-shell/theme/groovygdm3.gresource
 
-check=$(update-alternatives --query gdm3-theme.gresource | grep Value | grep /usr/local/share/gnome-shell/theme/focalgdm3.gresource >/dev/null && echo "pass" || echo "fail")
+check=$(update-alternatives --query gdm3-theme.gresource | grep Value | grep /usr/local/share/gnome-shell/theme/groovygdm3.gresource >/dev/null && echo "pass" || echo "fail")
 if [ "$check" == "pass" ]
 then
 echo "
@@ -208,9 +208,9 @@ fi
 --reset) ###################################################################################
 ############################################################################################
 
-if [ -e /usr/local/share/gnome-shell/theme/focalgdm3.gresource ]
+if [ -e /usr/local/share/gnome-shell/theme/groovygdm3.gresource ]
 then
-rm /usr/local/share/gnome-shell/theme/focalgdm3.gresource
+rm /usr/local/share/gnome-shell/theme/groovygdm3.gresource
 update-alternatives --quiet --set gdm3-theme.gresource "$source"
 cd /usr/local/share
 rmdir --ignore-fail-on-non-empty -p gnome-shell/theme
@@ -229,6 +229,6 @@ fi
 ############################################################################################
 *) #########################################################################################
 ############################################################################################
-echo "Use the parameter '--set' or '--reset'; example: './focalgdm3 --set' or './focalgdm3 --reset'"
+echo "Use the parameter '--set' or '--reset'; example: './groovygdm3 --set' or './groovygdm3 --reset'"
 exit 1
 esac
