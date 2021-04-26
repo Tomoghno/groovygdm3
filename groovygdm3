@@ -1,14 +1,14 @@
-#!/bin/bash
+#!/bin/sh
 
 codename=$(cat /etc/os-release | grep UBUNTU_CODENAME | cut -d = -f 2)
 
-if [ "$codename" == "groovy" ]
+if [ "$codename" == "hirsute" ]
 then
 source="/usr/share/gnome-shell/theme/Yaru/gnome-shell-theme.gresource"
 else
 echo "
 ----------------------------------------
-Sorry, Script is only for Ubuntu 20.10
+Sorry, Script is only for Ubuntu 21.04
 Quitting...
 ----------------------------------------"
 exit 1
