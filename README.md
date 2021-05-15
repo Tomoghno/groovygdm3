@@ -2,6 +2,7 @@
 # hirsutegdm3
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+![](https://visitor-badge.glitch.me/badge?page_id=Tomoghno.hirsutegdm3)
 
 _**This script assumes that the Installation of Ubuntu 20.10 is a fresh install. If you tried to change the GDM background with someother scripts, you first need to reset those changes. Other scripts may have the option --reset.**_
 
